@@ -1,5 +1,5 @@
 import RecoilDebugObserver from './RecoilDebugObserver';
-import reactotronRecoilPlugin from './ReactotronRecoilPlugin';
+import reactotronRecoilPlugin from './reactotronRecoilPlugin';
 
 export { RecoilDebugObserver, reactotronRecoilPlugin };
 
