@@ -1,6 +1,6 @@
 {
   "name": "reactotron-recoil-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "integrate recoil's state changes to  reactotron",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
