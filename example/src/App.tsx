@@ -1,19 +1,24 @@
 import * as React from 'react';
-
 import { StyleSheet, View, Text } from 'react-native';
-import ReactotronRecoilPlugin from 'reactotron-recoil-plugin';
+import { useRecoilState, RecoilRoot } from 'recoil';
+import { RecoilDebugObserver } from 'reactotron-recoil-plugin';
+import { instance } from './reactotronConfig';
+import { exampleAtom } from './exampleRecoil';
 
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    ReactotronRecoilPlugin.multiply(3, 7).then(setResult);
-  }, []);
-
+function TestComponent() {
+  const [state, setState] = useRecoilState(exampleAtom);
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text onPress={() => setState(3)}>Result: {state}</Text>
     </View>
+  );
+}
+export default function App() {
+  return (
+    <RecoilRoot>
+      <RecoilDebugObserver instance={instance} />
+      <TestComponent />
+    </RecoilRoot>
   );
 }
 

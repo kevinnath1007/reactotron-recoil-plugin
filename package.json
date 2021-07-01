@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/kevinn888/reactotron-recoil-plugin",
-  "author": "Kevin Nathaniel <kevinnathaniel48@gmail.com> (https://github.com/kevinn888)",
+  "repository": "https://github.com/kevinnath1007/reactotron-recoil-plugin",
+  "author": "Kevin Nathaniel <xineria.kn@gmail.com> (https://github.com/kevinnath1007)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevinn888/reactotron-recoil-plugin/issues"
+    "url": "https://github.com/kevinnath1007/reactotron-recoil-plugin/issues"
   },
-  "homepage": "https://github.com/kevinn888/reactotron-recoil-plugin#readme",
+  "homepage": "https://github.com/kevinnath1007/reactotron-recoil-plugin#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -64,12 +64,16 @@
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-builder-bob": "^0.18.1",
+    "reactotron-react-native": "^5.0.0",
+    "recoil": "0.3.1",
     "release-it": "^14.2.2",
     "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "reactotron-react-native": "^5.0.0",
+    "recoil": "^0.3.1"
   },
   "jest": {
     "preset": "react-native",

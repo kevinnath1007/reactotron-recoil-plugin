@@ -1,5 +1,10 @@
-export default {
-  multiply(a: number, b: number) {
-    return Promise.resolve(a * b);
-  },
-};
+import RecoilDebugObserver from './RecoilDebugObserver';
+import reactotronRecoilPlugin from './ReactotronRecoilPlugin';
+
+export { RecoilDebugObserver, reactotronRecoilPlugin };
+
+declare module 'reactotron-recoil-plugin' {
+  export interface Reactotron {
+    showRedux?: () => void;
+  }
+}
